@@ -1,0 +1,103 @@
+/* General css */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+:root{
+    --main-color : #5FAD51;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* Header css start */
+header{
+    width: 100%;
+    background: linear-gradient(#FFFFFF33 #5FAD511A) ;
+    height: auto;
+    top: 0;
+}
+/* //////////////////////////////////// */
+/* Navbar css start */
+nav{
+    /* background-color: #e6e3e3; */
+    height: 65px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 0;
+}
+nav .navbar-brand img{
+   margin-left: 40px;
+}
+nav .collapse ul li a{
+    color: #242A37;
+    transition:.5s ease-in-out ;
+    -webkit-transition:.5s ease-in-out ;
+    -moz-transition:.5s ease-in-out ;
+    -ms-transition:.5s ease-in-out ;
+    -o-transition:.5s ease-in-out ;
+}
+nav .collapse ul li:first-child a{
+    color: var(--main-color);
+}
+nav .collapse ul li:hover a{
+    color: var(--main-color);
+
+}
+nav .nav-left{
+    margin-top: 16px;
+}
+nav .nav-left ul li {
+    display: inline-block;
+}
+nav .nav-left ul li a {
+    color: #242A37 !important;
+}
+nav .nav-left ul li a:hover {
+    color: var(--main-color) !important;
+}
+nav .nav-left ul li button{
+    width: auto;
+    padding: 0 20px;
+    margin: 0 7px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid  #094E81;
+    border-radius: 20px; 
+    transition:.5s ease-in-out ;
+    -webkit-transition:.5s ease-in-out ;
+    -moz-transition:.5s ease-in-out ;
+    -ms-transition:.5s ease-in-out ;
+    -o-transition:.5s ease-in-out ;
+}
+nav .nav-left ul li button:hover{
+    background-color: var(--main-color) ;
+    border-color: black ;
+}
+/* Navbar css end */
+/* Header wrap css start */
+header .header-wrap h4 {
+color: var(--main-color);
+font-size: 20px;
+line-height: 24px;
+margin: 24px 0;
+margin-top: 70px;
+}
+header .header-wrap img{
+    max-width: 100%;
+}
+/* Header wrap css end */
+
+/* Header css end */
