@@ -100,6 +100,21 @@ header .header-wrap{
 header .header-wrap .text-right{
     width: 650px;
 }
+@media ( max-width: 1183px) {
+    header .header-wrap .text-right{
+        width: 400px;
+    }  
+   
+}
+@media ( max-width: 955px) {
+    header .header-wrap .text-right{
+        width: 320px;
+    }
+    header .header-wrap .text-right h2{
+        width: 400px;
+    }
+}
+
 header .header-wrap h4 {
     color: var(--main-color);
     font-size: 20px;
@@ -126,6 +141,7 @@ header .header-wrap .text-right p{
     text-align: justify;
     margin-top: 30px;
 }
+
 header .header-wrap button{
     height: 48px;
     border-radius:24px ;
@@ -230,6 +246,23 @@ header .header-wrap .img-box .span-img-green ,
         -o-transform: translateY(-55px);
     }
     }
+    @keyframes special{
+        0%{
+            transform: scale(0.6) !important;
+            -webkit-transform: scale(0.6) !important;
+            -moz-transform: scale(0.6) !important;
+            -ms-transform: scale(0.6) !important;
+            -o-transform: scale(0.6) !important;
+        }
+        100%{
+            transform: translateY(-55px);
+            -webkit-transform: translateY(-55px);
+            -moz-transform: translateY(-55px);
+            -ms-transform: translateY(-55px);
+            -o-transform: translateY(-55px);
+        }
+    }
+
 header .header-wrap .img-box .span-img-green {
     top: 50%;
     left: 60%;
@@ -249,10 +282,24 @@ header .header-wrap .img-box .span-img-blue {
 header .header-wrap .img-box .span-img-crown {
     top: 20%;
     left: 80%;
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    animation: special 3s ease-in-out 3s infinite alternate;
+    -webkit-animation: special 3s ease-in-out 3s infinite alternate;
 }
 header .header-wrap .img-box .span-img-arrow {
     top: 55%;
     left: 90%;
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    animation: special 3s ease-in-out 3s infinite alternate;
+    -webkit-animation: special 3s ease-in-out 3s infinite alternate;
 }
 header .header-wrap .img-group{
     position: absolute;
@@ -280,6 +327,7 @@ header .header-wrap .img-box .img-group .span-img-group{
     bottom: 10%;
     left: 90%;
 }
+
 .icon-down a i{
     color: #fff;
     width: 48px;
